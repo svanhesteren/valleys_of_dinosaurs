@@ -2,4 +2,8 @@
 
 <h1><%= @dinosaur.name%></h1>
 <p>Age is: <%= @dinosaur.age%></p>
+<!-- <img src="<%= @dinosaur.image_url %>" alt="No image"/> -->
 <%= image_tag @dinosaur.image_url%>
+
+<hr>
+<%= link_to "[Edit]", edit_dinosaur_path(@dinosaur.id)%>
