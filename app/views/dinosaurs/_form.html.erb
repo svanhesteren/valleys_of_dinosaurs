@@ -1,5 +1,5 @@
 
-<h1>Create a dino!!!</h1>
+<!-- <h1>Dino form!!!</h1> -->
 
 <ul>
   <% @dinosaur.errors.full_messages.each do |msg| %>
@@ -17,5 +17,5 @@
   <%= f.label :image_url%>
   <%= f.text_field :image_url%>
 
-  <%= f.submit "Create dino"%>
+  <%= f.submit (@dinosaur.new_record? ? "Create" : "Edit")%>
 <%end%>
